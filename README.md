@@ -1,11 +1,11 @@
 # rizzoma-docker
 This is a docker image to run rizzoma standalone for testing or quick deploys.
 
-# Description
+## Description
 
 This is a docker image to run rizzoma standalone for testing or quick deploys. It don't have sphinxsearch configured. An e-mail service (mailcatcher) is running on port 1080 and can be used to see all e-mails sent by the application. All configurations are default and this docker isn't hardened yet so I don't recommend use this image for long term deployment, just for tests or as disposable project. 
 
-# Install
+## Install
 
 To spin up the latest version of this image just run:
 
