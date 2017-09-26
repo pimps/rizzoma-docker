@@ -22,5 +22,11 @@ docker build -t rizzoma .
 docker run -p 8000:8000 -p 1080:1080 -t rizzoma
 ```
 
-Rizzoma will be running at http://localhost:8000/
-Mailcatcher will be running at http://localhost:1080/
+- Rizzoma will be running at http://localhost:8000/
+- Mailcatcher will be running at http://localhost:1080/
+
+## TODO
+
+- FIXME: The building with sphinxsearch isn't working as expected using the default configuration files in the rizzoma building proccess. Create a docker composer to agregate a sphinxsearch instance and update configurations into settings.coffee.
+- SECURITY IMPROVEMENT: Hardenize the docker image to run the daemons into the supervisord with low privilege users and also generate important secret infos from the settings.coffee file like hardcoded keys and passwords dinamically per build.
+
